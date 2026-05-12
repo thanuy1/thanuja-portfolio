@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thanuja Yarramreddy | Portfolio</title>
+    <title>Thanuja Yarramreddy | Backend Engineer</title>
 
     <style>
         body {
             margin: 0;
             font-family: "Inter", sans-serif;
-            background: #ffffff;
-            color: #222;
+            background: #0b1220;
+            color: #e5e7eb;
         }
 
-        /* NAVBAR */
+        /* NAV */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: #ffffffee;
+            background: rgba(15, 23, 42, 0.8);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #1f2937;
             padding: 15px 40px;
             display: flex;
             justify-content: space-between;
@@ -28,30 +28,71 @@
         }
 
         nav a {
-            margin-left: 25px;
+            margin-left: 20px;
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
+            color: #cbd5e1;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
         }
 
         /* HERO */
         .hero {
-            padding: 150px 40px 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            background: radial-gradient(circle at top, #1e293b, #0b1220);
+        }
+
+        .hero-content {
             max-width: 900px;
-            margin: auto;
+        }
+
+        .tag {
+            color: #38bdf8;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 20px;
-            color: #555;
+        .hero h1 span {
+            color: #38bdf8;
         }
 
-        /* SECTION */
+        .hero-desc {
+            font-size: 18px;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons a {
+            display: inline-block;
+            margin-right: 12px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #000;
+        }
+
+        .btn-secondary {
+            border: 1px solid #334155;
+            color: #e5e7eb;
+        }
+
+        /* SECTIONS */
         section {
             padding: 80px 40px;
             max-width: 1100px;
@@ -61,149 +102,185 @@
         h2 {
             font-size: 32px;
             margin-bottom: 20px;
+            color: #38bdf8;
         }
 
-        /* PROJECT CARDS */
+        p {
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        /* PROJECTS */
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         .card {
-            border: 1px solid #eee;
-            padding: 25px;
+            background: #111827;
+            padding: 20px;
             border-radius: 12px;
+            border: 1px solid #1f2937;
             transition: 0.2s;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            margin-top: 0;
+            border-color: #38bdf8;
         }
 
         .tech {
+            font-size: 13px;
+            color: #94a3b8;
             margin-top: 10px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #1f2937;
+            padding: 8px 14px;
+            border-radius: 20px;
             font-size: 14px;
-            color: #777;
+            color: #cbd5e1;
         }
 
         /* FOOTER */
         footer {
             text-align: center;
             padding: 40px;
-            color: #777;
-            border-top: 1px solid #eee;
-            margin-top: 50px;
+            color: #64748b;
+            border-top: 1px solid #1f2937;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div><strong>Thanuja</strong></div>
-        <div>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Backend Engineer</h1>
-        <p>Building scalable microservices, cloud systems, and AI‑powered automation.</p>
+<!-- NAV -->
+<nav>
+    <div><strong>Thanuja</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </div>
+</nav>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Backend‑focused Software Engineer with experience designing distributed systems,
-            event‑driven architectures, and AI‑assisted automation. Skilled in Java, Spring Boot,
-            Python, Kafka, AWS, and modern frontend frameworks. I enjoy building systems that solve
-            real business problems with clean architecture and scalability.
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <p class="tag">Python • Backend • Cloud • AI Engineer</p>
+
+        <h1>
+            Building scalable <span>backend systems</span>,  
+            cloud platforms, and AI-powered applications.
+        </h1>
+
+        <p class="hero-desc">
+            Backend Engineer specializing in Python, distributed systems,
+            microservices architecture, cloud infrastructure (AWS),
+            and AI/LLM integrations for intelligent automation systems.
         </p>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="projects">
-
-            <!-- PROJECT 1 -->
-            <div class="card">
-                <h3>FHIR API Integration (Research Project)</h3>
-                <p>
-                    Explored healthcare interoperability using FHIR standards. Tested public FHIR APIs,
-                    analyzed resource structures, and built a small prototype to fetch and display patient data.
-                </p>
-                <p class="tech">FHIR • Healthcare • API Research</p>
-            </div>
-
-            <!-- PROJECT 2 -->
-            <div class="card">
-                <h3>Real‑Time Appointment Scheduling Microservice</h3>
-                <p>
-                    Distributed scheduling engine preventing double‑booking using Kafka and Redis locks.
-                    Designed for high‑traffic healthcare and service platforms.
-                </p>
-                <p class="tech">Java • Spring Boot • Kafka • Redis • MySQL • Docker</p>
-            </div>
-
-            <!-- PROJECT 3 -->
-            <div class="card">
-                <h3>Timesheets Automation – Onboarding & Compliance</h3>
-                <p>
-                    Designed multi‑module onboarding system including Client, Employee, Immigration,
-                    and Licensing workflows with automated compliance checks.
-                </p>
-                <p class="tech">Workflow Automation • HR Tech • Compliance</p>
-            </div>
-
-            <!-- PROJECT 4 -->
-            <div class="card">
-                <h3>iRentPro.ai – Property Management SaaS</h3>
-                <p>
-                    SaaS platform for landlords and tenants with rent collection, maintenance workflows,
-                    vendor management, and Stripe‑based subscription billing.
-                </p>
-                <p class="tech">SaaS • Stripe • AWS • Multi‑Tenant Architecture</p>
-            </div>
-
+        <div class="hero-buttons">
+            <a href="resume.pdf" class="btn-primary">Download Resume</a>
+            <a href="https://github.com/yourusername" class="btn-secondary">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" class="btn-secondary">LinkedIn</a>
         </div>
-    </section>
+    </div>
+</div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p><strong>Backend:</strong> Java, Spring Boot, Python, Node.js, REST APIs, Microservices</p>
-        <p><strong>Cloud:</strong> AWS, Azure</p>
-        <p><strong>Data:</strong> MySQL, PostgreSQL, MongoDB, Redis, Kafka</p>
-        <p><strong>Frontend:</strong> React, Angular, TypeScript</p>
-        <p><strong>AI/ML:</strong> LLM Integration, OpenAI APIs</p>
-        <p><strong>DevOps:</strong> Docker, Kubernetes, Jenkins</p>
-    </section>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Backend Engineer focused on building scalable Python-based systems,
+        cloud-native architectures, and AI-powered automation platforms.
+    </p>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-        <p>GitHub: github.com/yourusername</p>
-    </section>
+    <p>
+        I work with Python, FastAPI, Flask, Kafka, AWS, Redis, Docker,
+        and PostgreSQL to design production-grade distributed systems.
+    </p>
 
-    <footer>
-        © 2026 Thanuja Yarramreddy — All Rights Reserved
-    </footer>
+    <p>
+        Interested in system design, event-driven architectures, and integrating LLMs
+        into backend workflows for intelligent automation.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>FHIR Healthcare Integration</h3>
+            <p>Python backend integrating FHIR APIs for healthcare interoperability and patient data systems.</p>
+            <div class="tech">Python • APIs • Healthcare Systems</div>
+        </div>
+
+        <div class="card">
+            <h3>Real-Time Scheduling System</h3>
+            <p>Distributed backend system using Kafka and Redis locks to prevent double booking under high load.</p>
+            <div class="tech">Python • Kafka • Redis • Microservices</div>
+        </div>
+
+        <div class="card">
+            <h3>Enterprise Workflow Automation</h3>
+            <p>Backend system for onboarding, compliance, and automated enterprise workflows.</p>
+            <div class="tech">Python • Automation • Backend Systems</div>
+        </div>
+
+        <div class="card">
+            <h3>iRentPro.ai SaaS Platform</h3>
+            <p>Multi-tenant SaaS platform with billing, workflows, and cloud deployment.</p>
+            <div class="tech">Python • AWS • SaaS • Stripe</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">FastAPI</div>
+        <div class="skill">Flask</div>
+        <div class="skill">Kafka</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">Redis</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">Microservices</div>
+        <div class="skill">System Design</div>
+        <div class="skill">LLM Integration</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+    © 2026 Thanuja Yarramreddy — Backend • Cloud • AI Engineer
+</footer>
 
 </body>
 </html>
