@@ -24,6 +24,7 @@
             padding: 15px 40px;
             display: flex;
             justify-content: space-between;
+            z-index: 1000;
         }
 
         nav a {
@@ -74,7 +75,7 @@
         /* SECTIONS */
         section {
             padding: 80px 40px;
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
         }
 
@@ -89,17 +90,24 @@
             line-height: 1.7;
         }
 
-        /* PROJECTS (STACKED) */
+        /* PROJECTS */
         .project {
             background: #111827;
-            padding: 20px;
+            padding: 22px;
             border-radius: 12px;
             border: 1px solid #1f2937;
             margin-bottom: 20px;
+            transition: 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+            border-color: #38bdf8;
         }
 
         .project h3 {
             margin-top: 0;
+            color: #e5e7eb;
         }
 
         .tech {
@@ -108,7 +116,11 @@
             margin-top: 10px;
         }
 
-        /* FOOTER */
+        /* SKILLS */
+        .skills p {
+            margin: 10px 0;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -136,12 +148,13 @@
         <p class="tag">Python • Backend • Cloud • AI Engineer</p>
 
         <h1>
-            Building scalable <span>backend systems</span>, cloud platforms, and AI solutions.
+            Building scalable <span>backend systems</span>, cloud-native platforms, and AI solutions.
         </h1>
 
         <p class="hero-desc">
-            Backend Engineer specializing in Python, distributed systems, microservices,
-            cloud infrastructure (AWS), and AI/LLM integration for automation systems.
+            Backend Engineer specializing in Python, distributed systems, microservices architecture,
+            cloud infrastructure (AWS), and AI/LLM integration. Focused on building scalable,
+            production-grade systems with clean architecture and automation-first design.
         </p>
     </div>
 </div>
@@ -151,53 +164,63 @@
     <h2>About Me</h2>
 
     <p>
-        Backend Engineer focused on building scalable Python-based systems,
-        cloud-native architectures, and AI-powered automation platforms.
+        I am a Backend Engineer focused on designing and building scalable systems using Python,
+        cloud technologies, and modern distributed architecture patterns.
     </p>
 
     <p>
-        Experienced in Python, FastAPI, Flask, Kafka, AWS, Redis, Docker, and PostgreSQL.
+        My experience includes working with microservices, event-driven systems, APIs, and
+        cloud deployments using AWS, Docker, and Kubernetes.
     </p>
 
     <p>
-        Interested in system design, distributed systems, and AI-driven backend automation.
+        I also explore AI integration in backend systems, especially using LLMs for automation,
+        workflow optimization, and intelligent decision-making systems.
     </p>
 </section>
 
-<!-- PROJECTS (ONE BY ONE) -->
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
     <div class="project">
-        <h3>FHIR Healthcare Integration</h3>
+        <h3>FHIR API Integration (Healthcare Research System)</h3>
         <p>
-            Python backend integrating FHIR APIs for healthcare data interoperability and patient record processing.
+            Built a research-driven backend system exploring healthcare interoperability using FHIR standards.
+            Integrated public FHIR APIs, analyzed medical resource structures, and built a prototype for
+            patient data retrieval and processing workflows.
         </p>
-        <div class="tech">Python • APIs • Healthcare Systems</div>
+        <div class="tech">Python • FHIR • Healthcare APIs • OAuth2 • Data Modeling</div>
     </div>
 
     <div class="project">
-        <h3>Real-Time Scheduling System</h3>
+        <h3>Timesheets Automation & Compliance Platform</h3>
         <p>
-            Distributed backend system using Kafka and Redis locks to prevent double booking under high traffic.
+            Designed an enterprise onboarding and compliance system integrating HR, immigration,
+            and licensing workflows. Automated document validation, approvals, and payroll readiness checks
+            with role-based access control.
         </p>
-        <div class="tech">Python • Kafka • Redis • Microservices</div>
-    </div>
-
-    <div class="project">
-        <h3>Enterprise Workflow Automation</h3>
-        <p>
-            Backend system for onboarding, compliance tracking, and workflow automation across enterprise modules.
-        </p>
-        <div class="tech">Python • Automation • Backend Systems</div>
+        <div class="tech">Python • Workflow Automation • RBAC • APIs • Enterprise Systems</div>
     </div>
 
     <div class="project">
         <h3>iRentPro.ai SaaS Platform</h3>
         <p>
-            Multi-tenant SaaS platform with billing, workflows, and cloud deployment architecture.
+            Built a multi-tenant SaaS platform for property management with rent collection,
+            tenant lifecycle management, maintenance workflows, and Stripe-based subscription billing.
+            Designed for scalability and cloud deployment.
         </p>
-        <div class="tech">Python • AWS • SaaS • Stripe</div>
+        <div class="tech">Python • AWS • SaaS Architecture • Stripe • Microservices</div>
+    </div>
+
+    <div class="project">
+        <h3>Construction Management Platform (Hackathon Project)</h3>
+        <p>
+            Developed a role-based construction management system in a 1-week hackathon.
+            Implemented 6 user roles with secure RBAC, financial workflows, project tracking,
+            and AI-assisted project insights for decision support.
+        </p>
+        <div class="tech">Python • RBAC • AI Agents • Cloud • System Design</div>
     </div>
 </section>
 
@@ -205,10 +228,10 @@
 <section id="skills">
     <h2>Skills</h2>
 
-    <p><b>Backend:</b> Python, FastAPI, Flask, REST APIs, Microservices</p>
-    <p><b>Cloud:</b> AWS, Docker, Kubernetes</p>
-    <p><b>Data:</b> Kafka, Redis, PostgreSQL, MySQL</p>
-    <p><b>AI:</b> LLM Integration, OpenAI APIs</p>
+    <p><b>Backend:</b> Python, FastAPI, Flask, REST APIs, Microservices Architecture</p>
+    <p><b>Cloud & DevOps:</b> AWS, Docker, Kubernetes, CI/CD</p>
+    <p><b>Data & Messaging:</b> Kafka, Redis, PostgreSQL, MySQL</p>
+    <p><b>AI & Automation:</b> LLM Integration, OpenAI APIs, Workflow Automation</p>
 </section>
 
 <footer>
