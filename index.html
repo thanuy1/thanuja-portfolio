@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanuja Yarramreddy | Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffffffee;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eee;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 150px 40px 100px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* PROJECT CARDS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .tech {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            border-top: 1px solid #eee;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div><strong>Thanuja</strong></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Backend Engineer</h1>
+        <p>Building scalable microservices, cloud systems, and AI‑powered automation.</p>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Backend‑focused Software Engineer with experience designing distributed systems,
+            event‑driven architectures, and AI‑assisted automation. Skilled in Java, Spring Boot,
+            Python, Kafka, AWS, and modern frontend frameworks. I enjoy building systems that solve
+            real business problems with clean architecture and scalability.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <!-- PROJECT 1 -->
+            <div class="card">
+                <h3>FHIR API Integration (Research Project)</h3>
+                <p>
+                    Explored healthcare interoperability using FHIR standards. Tested public FHIR APIs,
+                    analyzed resource structures, and built a small prototype to fetch and display patient data.
+                </p>
+                <p class="tech">FHIR • Healthcare • API Research</p>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="card">
+                <h3>Real‑Time Appointment Scheduling Microservice</h3>
+                <p>
+                    Distributed scheduling engine preventing double‑booking using Kafka and Redis locks.
+                    Designed for high‑traffic healthcare and service platforms.
+                </p>
+                <p class="tech">Java • Spring Boot • Kafka • Redis • MySQL • Docker</p>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="card">
+                <h3>Timesheets Automation – Onboarding & Compliance</h3>
+                <p>
+                    Designed multi‑module onboarding system including Client, Employee, Immigration,
+                    and Licensing workflows with automated compliance checks.
+                </p>
+                <p class="tech">Workflow Automation • HR Tech • Compliance</p>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="card">
+                <h3>iRentPro.ai – Property Management SaaS</h3>
+                <p>
+                    SaaS platform for landlords and tenants with rent collection, maintenance workflows,
+                    vendor management, and Stripe‑based subscription billing.
+                </p>
+                <p class="tech">SaaS • Stripe • AWS • Multi‑Tenant Architecture</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>Backend:</strong> Java, Spring Boot, Python, Node.js, REST APIs, Microservices</p>
+        <p><strong>Cloud:</strong> AWS, Azure</p>
+        <p><strong>Data:</strong> MySQL, PostgreSQL, MongoDB, Redis, Kafka</p>
+        <p><strong>Frontend:</strong> React, Angular, TypeScript</p>
+        <p><strong>AI/ML:</strong> LLM Integration, OpenAI APIs</p>
+        <p><strong>DevOps:</strong> Docker, Kubernetes, Jenkins</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your-email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+
+    <footer>
+        © 2026 Thanuja Yarramreddy — All Rights Reserved
+    </footer>
+
+</body>
+</html>
