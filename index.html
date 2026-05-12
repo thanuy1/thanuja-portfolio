@@ -18,13 +18,12 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid #1f2937;
             padding: 15px 40px;
             display: flex;
             justify-content: space-between;
-            z-index: 1000;
         }
 
         nav a {
@@ -70,39 +69,19 @@
             font-size: 18px;
             color: #94a3b8;
             line-height: 1.7;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons a {
-            display: inline-block;
-            margin-right: 12px;
-            padding: 12px 18px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .btn-primary {
-            background: #38bdf8;
-            color: #000;
-        }
-
-        .btn-secondary {
-            border: 1px solid #334155;
-            color: #e5e7eb;
         }
 
         /* SECTIONS */
         section {
             padding: 80px 40px;
-            max-width: 1100px;
+            max-width: 900px;
             margin: auto;
         }
 
         h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 30px;
             color: #38bdf8;
+            margin-bottom: 20px;
         }
 
         p {
@@ -110,24 +89,17 @@
             line-height: 1.7;
         }
 
-        /* PROJECTS */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
+        /* PROJECTS (STACKED) */
+        .project {
             background: #111827;
             padding: 20px;
             border-radius: 12px;
             border: 1px solid #1f2937;
-            transition: 0.2s;
+            margin-bottom: 20px;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #38bdf8;
+        .project h3 {
+            margin-top: 0;
         }
 
         .tech {
@@ -136,25 +108,10 @@
             margin-top: 10px;
         }
 
-        /* SKILLS */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: #1f2937;
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: #cbd5e1;
-        }
-
         /* FOOTER */
         footer {
             text-align: center;
-            padding: 40px;
+            padding: 30px;
             color: #64748b;
             border-top: 1px solid #1f2937;
         }
@@ -170,7 +127,6 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
     </div>
 </nav>
 
@@ -180,73 +136,68 @@
         <p class="tag">Python • Backend • Cloud • AI Engineer</p>
 
         <h1>
-            Building scalable <span>backend systems</span>,  
-            cloud platforms, and AI-powered applications.
+            Building scalable <span>backend systems</span>, cloud platforms, and AI solutions.
         </h1>
 
         <p class="hero-desc">
-            Backend Engineer specializing in Python, distributed systems,
-            microservices architecture, cloud infrastructure (AWS),
-            and AI/LLM integrations for intelligent automation systems.
+            Backend Engineer specializing in Python, distributed systems, microservices,
+            cloud infrastructure (AWS), and AI/LLM integration for automation systems.
         </p>
-
-        <div class="hero-buttons">
-            <a href="resume.pdf" class="btn-primary">Download Resume</a>
-            <a href="https://github.com/yourusername" class="btn-secondary">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile" class="btn-secondary">LinkedIn</a>
-        </div>
     </div>
 </div>
 
 <!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
+
     <p>
         Backend Engineer focused on building scalable Python-based systems,
         cloud-native architectures, and AI-powered automation platforms.
     </p>
 
     <p>
-        I work with Python, FastAPI, Flask, Kafka, AWS, Redis, Docker,
-        and PostgreSQL to design production-grade distributed systems.
+        Experienced in Python, FastAPI, Flask, Kafka, AWS, Redis, Docker, and PostgreSQL.
     </p>
 
     <p>
-        Interested in system design, event-driven architectures, and integrating LLMs
-        into backend workflows for intelligent automation.
+        Interested in system design, distributed systems, and AI-driven backend automation.
     </p>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS (ONE BY ONE) -->
 <section id="projects">
     <h2>Projects</h2>
 
-    <div class="projects">
+    <div class="project">
+        <h3>FHIR Healthcare Integration</h3>
+        <p>
+            Python backend integrating FHIR APIs for healthcare data interoperability and patient record processing.
+        </p>
+        <div class="tech">Python • APIs • Healthcare Systems</div>
+    </div>
 
-        <div class="card">
-            <h3>FHIR Healthcare Integration</h3>
-            <p>Python backend integrating FHIR APIs for healthcare interoperability and patient data systems.</p>
-            <div class="tech">Python • APIs • Healthcare Systems</div>
-        </div>
+    <div class="project">
+        <h3>Real-Time Scheduling System</h3>
+        <p>
+            Distributed backend system using Kafka and Redis locks to prevent double booking under high traffic.
+        </p>
+        <div class="tech">Python • Kafka • Redis • Microservices</div>
+    </div>
 
-        <div class="card">
-            <h3>Real-Time Scheduling System</h3>
-            <p>Distributed backend system using Kafka and Redis locks to prevent double booking under high load.</p>
-            <div class="tech">Python • Kafka • Redis • Microservices</div>
-        </div>
+    <div class="project">
+        <h3>Enterprise Workflow Automation</h3>
+        <p>
+            Backend system for onboarding, compliance tracking, and workflow automation across enterprise modules.
+        </p>
+        <div class="tech">Python • Automation • Backend Systems</div>
+    </div>
 
-        <div class="card">
-            <h3>Enterprise Workflow Automation</h3>
-            <p>Backend system for onboarding, compliance, and automated enterprise workflows.</p>
-            <div class="tech">Python • Automation • Backend Systems</div>
-        </div>
-
-        <div class="card">
-            <h3>iRentPro.ai SaaS Platform</h3>
-            <p>Multi-tenant SaaS platform with billing, workflows, and cloud deployment.</p>
-            <div class="tech">Python • AWS • SaaS • Stripe</div>
-        </div>
-
+    <div class="project">
+        <h3>iRentPro.ai SaaS Platform</h3>
+        <p>
+            Multi-tenant SaaS platform with billing, workflows, and cloud deployment architecture.
+        </p>
+        <div class="tech">Python • AWS • SaaS • Stripe</div>
     </div>
 </section>
 
@@ -254,28 +205,10 @@
 <section id="skills">
     <h2>Skills</h2>
 
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">FastAPI</div>
-        <div class="skill">Flask</div>
-        <div class="skill">Kafka</div>
-        <div class="skill">AWS</div>
-        <div class="skill">Docker</div>
-        <div class="skill">Kubernetes</div>
-        <div class="skill">Redis</div>
-        <div class="skill">PostgreSQL</div>
-        <div class="skill">Microservices</div>
-        <div class="skill">System Design</div>
-        <div class="skill">LLM Integration</div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
+    <p><b>Backend:</b> Python, FastAPI, Flask, REST APIs, Microservices</p>
+    <p><b>Cloud:</b> AWS, Docker, Kubernetes</p>
+    <p><b>Data:</b> Kafka, Redis, PostgreSQL, MySQL</p>
+    <p><b>AI:</b> LLM Integration, OpenAI APIs</p>
 </section>
 
 <footer>
